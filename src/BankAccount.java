@@ -1,13 +1,10 @@
 import java.time.LocalDateTime;
 
 public class BankAccount {
-
     private String ownerName;
     private int balance;
     private LocalDateTime openingDate;
     private boolean isBlocked;
-
-
     public BankAccount(String ownerName) {
         this.ownerName = ownerName;
         this.balance = 0;
@@ -67,11 +64,5 @@ public class BankAccount {
 
     @Override
     public String toString() {
-        return "BankAccount{" +
-                "ownerName='" + ownerName + '\'' +
-                ", balance=" + balance +
-                ", openingDate=" + openingDate +
-                ", isBlocked=" + isBlocked +
-                '}';
     }
 }
